@@ -2,30 +2,6 @@
 
 A Python CLI tool for generating beautiful HTML documentation from OWL ontologies, inspired by the original [LODE](https://github.com/essepuntato/LODE) project.
 
-## Features
-
-🚀 **Modern Python Implementation**
-- Command-line interface with pipx support
-- Multiple input sources (URLs and local files)
-- Automatic RDF format detection
-
-🎨 **Multiple Themes**
-- **Classic**: Traditional LODE styling
-- **Modern**: Clean design with blue/teal/orange palette
-- Responsive layouts for all devices
-
-📊 **Rich Documentation**
-- Complete OWL support (classes, properties, individuals)
-- Complex restriction handling (cardinality, value restrictions)
-- Namespace conflict resolution with prefixes
-- Multi-language support (EN, FR, IT, DE)
-
-🔧 **Advanced Features**
-- OWL reasoning with owlready2
-- Import resolution and closure processing
-- Multiple output formats (HTML, Markdown)
-- Collapsible sidebar navigation
-
 ## Quick Start
 
 ### Installation
