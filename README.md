@@ -189,45 +189,6 @@ PyLODE automatically detects and supports:
 - **HTML**: Complete documentation with CSS styling and navigation
 - **Markdown**: Clean documentation for README files or documentation sites
 
-## Features
-
-### Documentation Structure
-
-Generated documentation includes:
-
-1. **Header**: Ontology metadata, version, authors, imports
-2. **Namespace Declarations**: All prefixes and namespaces used
-3. **Abstract**: Ontology description and purpose
-4. **Table of Contents**: Collapsible sidebar navigation
-5. **Classes**: Hierarchies, restrictions, and relationships
-6. **Object Properties**: Domains, ranges, and characteristics
-7. **Data Properties**: Domains, ranges, and datatypes
-8. **Annotation Properties**: Metadata properties
-9. **Named Individuals**: Instances and their types
-
-### Advanced OWL Support
-
-- **Complex Restrictions**: someValuesFrom, allValuesFrom, cardinality
-- **Class Expressions**: unions, intersections, complements
-- **Property Chains**: Complex property relationships
-- **Equivalence**: Equivalent classes and properties
-- **Disjointness**: Disjoint classes and properties
-
-### Conflict Resolution
-
-When multiple ontologies define entities with the same name:
-
-```
-Before: Document, Document (ambiguous)
-After:  foaf:Document, schema:Document (clear)
-```
-
-### Responsive Design
-
-- **Desktop**: Full sidebar navigation with content area
-- **Tablet**: Collapsible sidebar with responsive layout  
-- **Mobile**: Optimized navigation and typography
-
 ## Themes
 
 ### Classic Theme
@@ -303,33 +264,6 @@ PyLODE consists of several key components:
 - **`ontology_processor.py`**: Processes OWL ontologies using RDFLib with optional owlready2 reasoning
 - **`html_generator.py`**: Generates HTML and Markdown documentation using Jinja2 templates
 - **`cli.py`**: Command-line interface using Click
-
-## Comparison with Original LODE
-
-| Feature | Original LODE | PyLODE |
-|---------|---------------|---------|
-| **Platform** | Java servlet | Python CLI |
-| **Installation** | Complex setup | `pipx install pylode` |
-| **Input** | HTTP URLs only | URLs + local files |
-| **Output** | HTML via web | HTML + Markdown files |
-| **Themes** | Single style | Classic + Modern |
-| **Reasoning** | Pellet reasoner | owlready2 |
-| **Navigation** | Static ToC | Collapsible sidebar |
-| **Mobile** | Limited | Fully responsive |
-| **Conflicts** | Not handled | Automatic prefix resolution |
-
-## Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes with tests
-4. Submit a pull request
-
-## License
-
-This project is licensed under the Apache License 2.0 - see the original LODE project for license details.
 
 ## Author
 
