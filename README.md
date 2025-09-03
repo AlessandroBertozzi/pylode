@@ -1,6 +1,6 @@
 # PyLODE - Python Live OWL Documentation Environment
 
-A Python CLI tool for generating beautiful HTML documentation from OWL ontologies, inspired by the original [LODE](https://github.com/essepuntato/LODE) project.
+A Python CLI tool for generating HTML documentation from OWL ontologies, inspired by the original [LODE](https://github.com/essepuntato/LODE) project.
 
 ## Quick Start
 
