@@ -258,7 +258,7 @@ mypy src/
 
 ## Architecture
 
-PyLODE consists of several key components:
+PyLODE consists in:
 
 - **`ontology_fetcher.py`**: Handles fetching from URLs and files with format detection
 - **`ontology_processor.py`**: Processes OWL ontologies using RDFLib with optional owlready2 reasoning
