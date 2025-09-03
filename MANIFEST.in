@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include PYTHON_CONVERSION.md
+recursive-include src/lode/templates *.html
+recursive-include src/lode/data *.json *.css *.js
+global-exclude *.pyc
+global-exclude __pycache__
