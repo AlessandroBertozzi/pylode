@@ -10,7 +10,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### Documentation Generation (Single File)
+### Launch the command
 To generate documentation for a single `.ttl` file:
 
 ```bash
