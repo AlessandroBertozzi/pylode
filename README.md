@@ -1,7 +1,7 @@
 # pylode
 Python port of LODE (Live OWL Documentation Environment).
 
-### Installazione
+### Installation
 ```bash
 cd pylode
 python3 -m venv venv
@@ -10,25 +10,28 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### Generazione Documentazione (Singolo File)
-Per generare la documentazione di un singolo file `.ttl`:
+### Documentation Generation (Single File)
+To generate documentation for a single `.ttl` file:
 
 ```bash
 pylode <input_path.ttl> -o <output_path.html>
 ```
-**Esempio:**
+**Example:**
 ```bash
 pylode ../ontologies/Dataset.ttl -o ../ontologies_docs/Dataset/index.html
 ```
 
-### Generazione Barch e Serializzazione
-Per processare **tutti** i file `.ttl` nella cartella `../ontologies/`, generando HTML, TTL e RDF:
+### Batch Generation and Serialization
+To process **all** `.ttl` files in the `../ontologies/` directory, generating HTML, TTL, and RDF:
 
 ```bash
 python scripts/serialize.py
 ```
-Questo comando:
-1. Crea una cartella per ogni ontologia in `../ontologies_docs/`
-2. Genera l'`index.html`
-3. Copia il file originale `.ttl`
-4. Genera la serializzazione `.rdf` (RDF/XML)
+This command:
+1. Creates a folder for each ontology in `../ontologies_docs/`
+2. Generates the `index.html`
+3. Copies the original `.ttl` file
+4. Generates the `.rdf` serialization (RDF/XML)
+
+### Credits
+This work is based on Silvio Peroni's [LODE](https://github.com/essepuntato/LODE).
